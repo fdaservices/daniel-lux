@@ -1,9 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 
 /**
- * Typographic Daniel-Lux wordmark — reproduces the logo (DANIEL in steel,
- * LUX in azure, ENTREPRISE underneath) as crisp text so it scales perfectly
- * and adapts to light or dark backgrounds.
+ * Official Daniel-Lux logo image, framed in a rounded border.
+ * The artwork already has a dark background, so the border + rounded corners
+ * turn it into a clean badge that reads well on both light and dark sections.
  */
 export function Logo({
   variant = "light",
@@ -12,20 +13,22 @@ export function Logo({
   variant?: "light" | "dark";
   className?: string;
 }) {
-  const danielColor = variant === "dark" ? "text-white" : "text-night";
+  const border =
+    variant === "dark" ? "border-night-600" : "border-night-700";
   return (
     <Link
       href="/"
-      aria-label="Daniel-Lux — accueil"
-      className={`group inline-flex flex-col leading-none ${className}`}
+      aria-label="Daniel-Lux Entreprise — accueil"
+      className={`inline-flex shrink-0 overflow-hidden rounded-xl border ${border} shadow-sm ${className}`}
     >
-      <span className="flex items-baseline text-2xl font-black tracking-tight sm:text-[1.7rem]">
-        <span className={danielColor}>DANIEL</span>
-        <span className="text-accent">-LUX</span>
-      </span>
-      <span className="mt-1 text-[0.6rem] font-bold uppercase tracking-[0.5em] text-accent">
-        Entreprise
-      </span>
+      <Image
+        src="/images/logo-daniel-lux.png"
+        alt="Daniel-Lux Entreprise"
+        width={1131}
+        height={300}
+        priority
+        className="h-11 w-auto sm:h-12"
+      />
     </Link>
   );
 }
