@@ -15,8 +15,6 @@ const CONTACT_FROM =
 /** Destination for new contact submissions. Defaults to the company inbox. */
 const CONTACT_TO = process.env.CONTACT_TO ?? siteConfig.email;
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 /**
  * Contact form endpoint.
  * Validates the submission server-side, then forwards it by e-mail via Resend.
@@ -65,6 +63,10 @@ export async function POST(request: Request) {
       { status: 503 },
     );
   }
+
+  // Instantiated lazily (not at module load) so the production build never fails
+  // when RESEND_API_KEY is absent at build time — only this request path needs it.
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   const fullName = prenom ? `${prenom} ${nom}` : nom;
   const subject = `Nouvelle demande de devis — ${fullName}`;
