@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Daniel-Lux">
+  <rect width="64" height="64" rx="14" fill="#0a1626"/>
+  <text x="50%" y="50%" dy="0.02em" text-anchor="middle" dominant-baseline="central"
+        font-family="'Manrope','Arial',sans-serif" font-weight="800" font-size="30"
+        letter-spacing="-1">
+    <tspan fill="#ffffff">D</tspan><tspan fill="#1fa2e6">L</tspan>
+  </text>
+  <rect x="14" y="46" width="36" height="4" rx="2" fill="#1fa2e6"/>
+</svg>

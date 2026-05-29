@@ -1,0 +1,34 @@
+/* TEAM */
+
+Entreprise: Daniel-Lux Sàrl-s
+Activité: Construction, rénovation et aménagement — gros œuvre, peinture, isolation, carrelage, faux plafonds, nettoyage, démolition
+Lieu: Perlé (Rambrouch), Grand-Duché de Luxembourg
+Contact: contact@daniel-lux.lu
+Téléphone: 661 80 08 01
+
+/* AUTEUR DU SITE */
+
+Nom: Cesar Augusto Castrejon Rossier
+LinkedIn: https://www.linkedin.com/in/c%C3%A9sar-augusto-castrej%C3%B3n-rossier-92a40b141
+Agence: Wedo (wedo.lu)
+
+/* SITE */
+
+Dernière mise à jour: 2026-05
+Langue: Français (fr-LU)
+Doctype: HTML5
+Standards: HTML5, CSS3, JSON-LD (schema.org)
+Composants: Next.js 16, React 19, Tailwind CSS 4
+Hébergement web: Node.js
+Accessibilité: navigation au clavier, contrastes soignés, attributs ARIA, textes alternatifs
+SEO: métadonnées par page, Open Graph, sitemap.xml, robots.txt, llms.txt, données structurées
+
+/* REMERCIEMENTS */
+
+Merci à toute l'équipe de Daniel-Lux pour son savoir-faire et son dévouement
+au service de la construction et de la rénovation au Luxembourg.
+
+                  _________
+                 | DANIEL  |
+                 |  -LUX   |   Construction · Rénovation · Aménagement
+                 |_________|
